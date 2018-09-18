@@ -1,0 +1,426 @@
+/* color variables */
+
+$colorone: #ca0813;
+$colortwo: #97040c;
+$colorthree: #4b0103;
+
+/* end color variables */
+
+a#searchopen:link,
+a#searchopen:visited,
+a#mobileclose:link, 
+a#mobileclose:visited {
+	color: $colortwo;
+}
+
+#mobile_nav,
+#search {
+	background: rgba($colorthree, 0.9);
+}
+
+header.home_default_image {
+	background: url('../img/home.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax.parallax_default_image {
+	background: url('../img/parallax.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header.header_mobile_home .mobile_navigation_bar, header.header_page_mobile .mobile_navigation_bar {
+	background: #ffffff;
+	padding: 12.5px 0px;
+	
+	#logo_mobile {
+		img {
+			height: 40px;
+		}
+	}
+	
+	#mobileopen {
+		color: $colortwo;
+	}
+}
+
+header.header_mobile_home .mobile_navigation_bar, header.header_page_mobile .mobile_navigation_bar {
+	padding: 12.5px 0px;
+}
+
+header {
+	#nav_bar.full_navigation {
+		background: #ffffff;
+		
+		.container {
+			nav {
+				ul {
+					li {
+						a:link,
+						a:visited {
+							color: #333333;
+						}
+						
+						ul {
+							li {
+								background: #333333;
+								
+								a:link,
+								a:visited {
+									padding: 15px 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#contact_information.full_navigation {
+		background: #ffffff;
+		
+		ul {
+			li {
+				a:link,
+				a:visited {
+					color: #333333;
+				}
+			}
+		}
+	}
+}
+
+header #nav_bar .container nav .menu-primary-container>ul>li.menu-item-has-children>a:link, header #nav_bar .container nav .menu-primary-container>ul>li.menu-item-has-children>a:visited {
+	background: url('../img/arrow_down.png') no-repeat;
+	background-position: right 10px top 19px;
+    background-size: 20px 20px;
+    padding-right: 30px;
+}
+
+header #nav_bar.scroll-fix .container nav .menu-primary-container>ul>li.menu-item-has-children>a:link, header #nav_bar.scroll-fix .container nav .menu-primary-container>ul>li.menu-item-has-children>a:visited {
+	background: url(csstone/features/arrow_down.png) no-repeat;
+    background-position: right 10px top 14px;
+    background-size: 20px 20px;
+    padding-right: 30px;
+}
+
+header.page_default_image {
+	background: url('../img/page.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header.header_page #page_title h1.heading {
+	padding-top: 256px;
+}
+
+.appointment {
+	background: $colortwo;
+}
+
+.call_out_boxes {
+	.cob_3 {
+		.call_out_boxes_item {
+			.square.icon {
+				background: $colortwo;
+			}
+			
+			h3 {
+				color: $colortwo;
+			}
+			
+			a:link,
+			a:visited {
+				border: 2px solid $colortwo;
+				color: $colortwo;
+			}
+		}
+	}
+}
+
+.content {
+	h1,h3 {
+		color: $colortwo;
+	}
+	
+	hr.divider {
+		background: $colortwo;
+	}
+	
+	a:link,
+	a:visited {
+		color: $colortwo;
+	}
+	
+	#accordion {
+		& > h3 {
+			color: #777777;
+			font-weight: 600;
+		}
+		
+		& > h3.ui-state-active {
+			color: $colortwo;
+		}
+	}
+	
+	.staff_wrapper {
+		padding: 10px 20px;
+		
+		&:nth-child(even) {
+			background: #f1f1f1;
+		}
+		
+		.staff_title {
+			color: #777777;
+			display: inline-block;
+			font-size: 18px;
+			font-weight: 500;
+			width: 25%;
+		}
+		
+		.staff_name {
+			color: #777777;
+			display: inline-block;
+			font-size: 18px;
+			width: 70%;
+		}
+	}
+	
+	.jewel_wrapper {
+		padding: 10px 20px;
+		
+		&:nth-child(even) {
+			background: #f1f1f1;
+		}
+		
+		.jewel_value {
+			color: #777777;
+			display: inline-block;
+			font-size: 18px;
+			font-weight: 500;
+			width: 15%;
+		}
+		
+		.jewel_desc {
+			color: #777777;
+			display: inline-block;
+			font-size: 18px;
+			width: 80%;
+		}
+	}
+	
+	.hospital_wrapper {
+		display: inline-block;
+		margin-top: 30px;
+		padding: 0px 10px;
+		vertical-align: top;
+		width: calc(33% - 20px);
+		
+		span.hospital_loc {
+			display: block;
+			
+			&:nth-child(odd) {
+				background: #f1f1f1;
+			}
+		}
+	}
+	
+	.newsletter_wrapper {
+		
+		
+		.newsletter_item {
+			display: inline-block;
+			margin-bottom: 40px;
+			padding: 0px 20px;
+			width: calc(33% - 40px);
+			
+			h3 {
+				display: block;
+				text-align: center;
+			}
+			
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+	
+	.pot_wrapper {
+		display: inline-block;
+		padding: 0px 10px;
+		vertical-align: top;
+		width: calc(50% - 25px);
+		
+		.pot_row {
+			
+			&:nth-child(even) {
+				background: #f1f1f1;
+			}
+			
+			.pot_name {
+				color: #777777;
+				display: inline-block;
+				font-size: 18px;
+				font-weight: 500;
+				padding: 10px 10px;
+				width: calc(70% - 20px);
+			}
+			
+			.pot_year {
+				color: #777777;
+				display: inline-block;
+				font-size: 18px;
+				font-weight: 300;
+				padding: 10px 10px;
+				text-align: right;
+				width: calc(30% - 20px);
+			}	
+		}
+	}
+}
+
+.sidebar {
+	h3 {
+		color: $colortwo;
+	}
+	
+	a:link,
+	a:visited {
+		color: $colortwo;
+	}
+}
+
+footer {
+	background: #ffffff;
+}
+
+.copyright {
+	background: $colortwo;
+}
+
+/* responsive media queries */
+
+@media (min-width: 980px) and (max-width: 1220px) {
+	
+}
+	
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	header.header_page.page_default_image {
+		background: url('../img/page_mobile.jpg') no-repeat;
+	    background-size: 100%;
+	    background-attachment: fixed;
+	}
+	
+	header.header_page #page_title h1.heading {
+		padding-top: 90px;
+	}
+	
+}
+	
+@media (min-width: 480px) and (max-width: 767px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+	    background-size: 100%;
+	    background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/page_mobile.jpg') no-repeat;
+	    background-size: 100%;
+	    background-attachment: fixed;
+	}
+	
+	header.header_page #page_title h1.heading {
+		padding-top: 90px;
+	}
+	
+	.content {
+		.staff_wrapper {
+			
+			.staff_title {
+				width: 45%;
+			}
+			
+			.staff_name {
+				width: 45%;
+			}
+		}
+		
+		.hospital_wrapper {
+			width: calc(100% - 20px);
+		}
+		
+		.pot_wrapper {
+			width: calc(100% - 25px);
+		}
+	}
+	
+	footer {
+		#logo_footer {
+			img {
+				height: 60px;
+			}
+		}
+	}
+	
+}
+	
+@media (min-width: 0px) and (max-width: 479px) {
+	
+	header.home_default_image {
+		background: url('../img/home_mobile.jpg') no-repeat;
+	    background-size: 100%;
+	    background-attachment: fixed;
+	}
+	
+	header.header_page.page_default_image {
+		background: url('../img/page_mobile.jpg') no-repeat;
+	    background-size: 100%;
+	    background-attachment: fixed;
+	}
+	
+	header.header_page #page_title h1.heading {
+		padding-top: 90px;
+	}
+	
+	.content {
+		.staff_wrapper {
+			
+			.staff_title {
+				width: 45%;
+			}
+			
+			.staff_name {
+				width: 45%;
+			}
+		}
+		
+		.hospital_wrapper {
+			width: calc(100% - 20px);
+		}
+		
+		.newsletter_wrapper {
+			.newsletter_item {
+				width: calc(50% - 40px);
+			}
+		}
+		
+		.pot_wrapper {
+			width: calc(100% - 25px);
+		}
+	}
+	
+	footer {
+		#logo_footer {
+			img {
+				height: 40px;
+			}
+		}
+	}
+	
+}
