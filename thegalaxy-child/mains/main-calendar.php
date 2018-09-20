@@ -33,9 +33,41 @@
 		
 	endif;
 	
-	echo '<div class="default_editor"><div class="container"><div class="row gutters">';
+	echo '<div class="default_editor"><div class="container">';
+	
+	echo '<div class="row gutters">';
+	
+	$events = get_field('priority_events','options');
+	
+	if( $events ):
+	
+		//shuffle($marketplace);
+		
+		echo '<div class="col_12">';
+									
+		foreach( $events as $event ):
+			
+			$image = $event['event_image'];
+			
+			echo '<div class="event_item">';
+			
+			echo '<a href="' . $image['url'] . '" class="fancybox" rel="events" target="_blank">';
+			
+			echo '<img src="' . $image['url'] . '" alt="' . $image['alt'] . '" />';
+			
+			echo '</a>';
+			
+			echo '</div>';
+		
+		endforeach;
+		
+		echo '</div>';
+		
+	endif;
+	
+	echo '</div>';
 
-	echo '<div class="col_12"><div class="content">';
+	echo '<div class="row gutters"><div class="col_12"><div class="content">';
 	
 	get_template_part( 'loops/loop', 'page' );
 
