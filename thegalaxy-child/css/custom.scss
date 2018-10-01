@@ -18,136 +18,104 @@ a#mobileclose:visited {
 	background: rgba($colorthree, 0.9);
 }
 
-header.home_default_image {
+header {
 	background: url('../img/home.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.parallax.parallax_default_image {
+#parallax {
 	background: url('../img/parallax.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-header.slideshow .image_slide.slide_1 {
+header#header_home.slideshow_tall .image_slide.slide_1 {
 	background: url('../img/slide1.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-header.slideshow .image_slide.slide_2 {
+header#header_home.slideshow_tall .image_slide.slide_2 {
 	background: url('../img/slide2.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-header.slideshow .image_slide.slide_3 {
+header#header_home.slideshow_tall .image_slide.slide_3 {
 	background: url('../img/slide3.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-header.slideshow .image_slide.slide_4 {
+header#header_home.slideshow_tall .image_slide.slide_4 {
 	background: url('../img/slide4.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-header.header_mobile_home .mobile_navigation_bar, header.header_page_mobile .mobile_navigation_bar {
-	background: #ffffff;
-	padding: 12.5px 0px;
-	
-	#logo_mobile {
-		img {
-			height: 40px;
+header#header_home_mobile,
+header#header_page_mobile {
+	.mobile_navigation_bar {
+		background: #ffffff;
+		
+		a#mobileopen:link,
+		a#mobileopen:visited {
+			color: $colortwo;
 		}
-	}
-	
-	#mobileopen {
-		color: $colortwo;
 	}
 }
 
-header.header_mobile_home .mobile_navigation_bar, header.header_page_mobile .mobile_navigation_bar {
-	padding: 12.5px 0px;
+#top_bar.containerwidth {
+	background: $colortwo;
 }
 
 header {
 	#nav_bar.full_navigation {
 		background: #ffffff;
-		
-		.container {
-			nav {
-				ul {
-					li {
-						a:link,
-						a:visited {
-							color: #333333;
-						}
-						
-						ul {
-							li {
-								background: #333333;
-								
-								a:link,
-								a:visited {
-									padding: 15px 20px;
-								}
-							}
-						}
+		height: 200px;
+
+		#primary_nav {
+			ul {
+				li {
+					a:link,
+					a:visited {
+						color: #333333;
 					}
 				}
 			}
 		}
 	}
 	
-	#contact_information.full_navigation {
-		background: #ffffff;
-		
-		ul {
-			li {
-				a:link,
-				a:visited {
-					color: #333333;
-				}
-			}
-		}
+	#nav_bar.full_navigation.scroll-fix {
+		height: 70px;
 	}
 }
 
-header #nav_bar .container nav .menu-primary-container>ul>li.menu-item-has-children>a:link, header #nav_bar .container nav .menu-primary-container>ul>li.menu-item-has-children>a:visited {
-	background: url('../img/arrow_down.png') no-repeat;
-	background-position: right 10px top 19px;
-    background-size: 20px 20px;
-    padding-right: 30px;
-}
-
-header #nav_bar.scroll-fix .container nav .menu-primary-container>ul>li.menu-item-has-children>a:link, header #nav_bar.scroll-fix .container nav .menu-primary-container>ul>li.menu-item-has-children>a:visited {
-	background: url(csstone/features/arrow_down.png) no-repeat;
-    background-position: right 10px top 14px;
-    background-size: 20px 20px;
-    padding-right: 30px;
-}
-
-header.page_default_image {
+header#header_page {
 	background: url('../img/page.jpg') no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
 
-header.header_page #page_title h1.heading {
+header#header_page_mobile {
+	#page_title {
+	    display: none;
+    }
+}
+
+header#header_page #page_title h1.heading {
 	padding-top: 256px;
 }
 
-.appointment {
+#appointment {
 	background: $colortwo;
 }
 
-.call_out_boxes {
+#call_out_boxes {
 	.cob_3 {
 		.call_out_boxes_item {
-			.square.icon {
+			.square.fas {
 				background: $colortwo;
 			}
 			
@@ -157,8 +125,7 @@ header.header_page #page_title h1.heading {
 			
 			a:link,
 			a:visited {
-				border: 2px solid $colortwo;
-				color: $colortwo;
+				background: $colortwo;
 			}
 		}
 	}
@@ -307,13 +274,9 @@ header.header_page #page_title h1.heading {
 }
 
 .sidebar {
-	h3 {
-		color: $colortwo;
-	}
 	
-	a:link,
-	a:visited {
-		color: $colortwo;
+	.business_information_wrapper {
+		background: $colortwo;
 	}
 }
 
@@ -346,7 +309,7 @@ footer {
 	background: #ffffff;
 }
 
-.copyright {
+#copyright {
 	background: $colortwo;
 }
 
