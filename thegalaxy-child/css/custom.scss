@@ -16,6 +16,14 @@ a#mobileclose:visited {
 #mobile_nav,
 #search {
 	background: rgba($colorthree, 0.9);
+	
+	.mobile_nav_wrapper {
+		#mobile_search {
+			input[type="submit"] {
+				color: $colorone;
+			}
+		}
+	}
 }
 
 header {
@@ -62,6 +70,13 @@ header#header_page_mobile {
 		a#mobileopen:link,
 		a#mobileopen:visited {
 			color: $colortwo;
+		}
+		
+		#logo_mobile {
+			img {
+				height: 40px;
+				padding: 5px 0px;
+			}
 		}
 	}
 }
@@ -294,6 +309,13 @@ footer {
 	background: $colortwo;
 }
 
+.edit_button {
+	a:link,
+	a:visited {
+		background: $colorone;
+	}
+}
+
 /* responsive media queries */
 
 @media (min-width: 980px) and (max-width: 1220px) {
@@ -406,8 +428,13 @@ footer {
 	
 	footer {
 		#logo_footer {
-			img {
-				height: 40px;
+			
+			a:link,
+			a:visited {
+				
+				img {
+					height: 40px;
+				}
 			}
 		}
 	}
