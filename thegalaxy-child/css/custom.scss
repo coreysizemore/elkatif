@@ -316,6 +316,10 @@ footer {
 	}
 }
 
+#post-1298 iframe {
+	width: 100%;
+}
+
 
 /* link element */
 
@@ -362,6 +366,21 @@ footer {
 		a:active {
 			opacity: .5;
 		}
+	}
+}
+
+.calendar_col {
+	width: calc(48% - 40px);
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+	
+	&.cal_col_1 {
+		width: calc(60% - 45px);
+	}
+	
+	&.cal_col_2 {
+		width: calc(40% - 45px);
 	}
 }
 
@@ -442,6 +461,19 @@ footer {
 		}
 	}
 	
+	.calendar_col {
+		width: calc(100% - 40px);
+		display: block;
+		
+		&.cal_col_1 {
+			width: calc(100% - 45px);
+		}
+		
+		&.cal_col_2 {
+			width: calc(100% - 45px);
+		}
+	}
+	
 }
 	
 @media (min-width: 0px) and (max-width: 479px) {
@@ -513,6 +545,19 @@ footer {
 		
 		span.link {
 			width: calc(100% - 40px);
+		}
+	}
+	
+	.calendar_col {
+		width: calc(100% - 40px);
+		display: block;
+		
+		&.cal_col_1 {
+			width: calc(100% - 45px);
+		}
+		
+		&.cal_col_2 {
+			width: calc(100% - 45px);
 		}
 	}
 	
